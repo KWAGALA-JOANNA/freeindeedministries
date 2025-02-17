@@ -1285,7 +1285,7 @@ from flask import Blueprint, request, jsonify
 from FIMAPP.models.user import User
 from FIMAPP.extensions import db, bcrypt, jwt
 from flask_jwt_extended import jwt_required, create_access_token, get_jwt_identity
-from email_validator import validate_email
+from email_validator import validate_email, EmailNotValidError
 from datetime import datetime
 from werkzeug.security import check_password_hash
 from functools import wraps
