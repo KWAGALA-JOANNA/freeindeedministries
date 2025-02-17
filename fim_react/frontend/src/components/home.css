@@ -1,0 +1,301 @@
+/* General Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f4f4f4;
+  color: #333;
+  line-height: 1.6;
+}
+
+/* Top Background Section */
+.background-section {
+  width: 100%;
+  height: 80vh;
+  background-size: cover;
+  background: radial-gradient(circle, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.9));
+  background-position: center 25%;
+  position: relative;
+  opacity: 9;
+  background-repeat: no-repeat;
+}
+
+.background-text {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  color: white;
+  text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7);
+}
+
+.background-text h1 {
+  font-size: 4rem;
+  margin-bottom: 10px;
+  color:#fff;
+}
+
+.background-text p {
+  font-size: 1.2rem;
+  /* color: rgb(255, 145, 0); */
+}
+
+/* Slider Section */
+.slider-container {
+  width: 100%;
+  height: 70vh;
+  position: relative;
+  overflow: hidden;
+}
+
+.slider {
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+  background-position: center;
+  transition: background-image 0.5s ease-in-out;
+}
+
+/* Cards Section */
+.cards-section {
+  padding: 40px 20px;
+  text-align: center;
+}
+
+.cards-section h2 {
+  font-size: 2rem;
+  margin-bottom: 20px;
+  color: #333;
+}
+
+.cards-container {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.card {
+  background: white;
+  border-radius: 8px;
+  padding: 20px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  max-width: 300px;
+  flex: 1;
+  transition: transform 0.3s ease, box-shadow 0.3s ease; /* Smooth hover animation */
+}
+
+.card h3 {
+  font-size: 1.5rem;
+  margin-bottom: 10px;
+  color: #4ECDC4;
+}
+
+.card p {
+  font-size: 1rem;
+  color: #050505;
+}
+
+.card:hover {
+  transform: translateY(-5px); /* Moves the card slightly upward */
+  box-shadow: 0 6px 10px rgba(0, 0, 0, 0.15); /* Adds a slightly larger shadow */
+}
+
+
+/* Footer */
+footer {
+  background-color: black;
+  color: white;
+  padding: 20px;
+  text-align: center;
+}
+
+footer a {
+  color: white;
+  text-decoration: none;
+}
+
+footer a:hover {
+  text-decoration: underline;
+}
+
+/* Media Queries */
+@media (max-width: 768px) {
+  .background-text h1 {
+    font-size: 2rem;
+  }
+
+  .background-text p {
+    font-size: 1rem;
+  }
+
+  .cards-container {
+    flex-direction: column;
+  }
+}
+
+/* Heading Section */
+.heading-section {
+  padding: 20px 0;
+  text-align: left;
+  background-color: #f4f4f4;
+}
+
+.heading-section h2 {
+  font-size: 45px;
+  margin-bottom: 10px;
+  color: hsl(37, 95%, 44%);
+  text-align: left;
+  text-shadow: 2px 2px 5px rgba(44, 43, 43, 0.7);
+  font-weight: bolder;
+  padding-left: 3%;
+}
+
+.heading-section p{
+  font-size: 20px;
+  padding-left: 3%;
+}
+
+
+
+.brenda-card {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #f9f9f9;
+  padding: 20px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  margin: 20px 0;
+}
+
+
+.brenda-image {
+  width: 150px;
+  height: 150px;
+  object-fit: cover;
+  border-radius: 8px;
+}
+
+/* Miss Brenda Card Section
+.brenda-card {
+  padding: 40px 20px;
+  background-color: #fff;
+  margin-top: 40px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  text-align: center; 
+  
+}
+
+.brenda-card h2 {
+  font-size: 1rem;
+  margin-bottom: 20px;
+  font-size: 1rem;
+  margin-bottom: 10px;
+  margin-left: 0; Ensure there’s no left margin
+  text-align: left; 
+}
+
+.brenda-content {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.brenda-image {
+  width: 200px;
+  height: auto;
+  border-radius: 8px;
+  object-fit: cover;
+}
+
+.brenda-text {
+  max-width: 500px;
+  text-align: left;
+}
+ */
+
+
+ .brenda-card {
+  flex: 1;
+  margin-left: 10px;
+  text-align: justify;
+}
+
+.brenda-content {
+  display: flex;
+  flex-direction: column; /* Stack items vertically */
+  align-items: center; /* Center items horizontally */
+  justify-content: center; /* Center items vertically if needed */
+  gap: 20px;
+}
+
+.brenda-image {
+  width: 200px;
+  height: auto;
+  border-radius: 8px;
+  object-fit: cover;
+}
+
+.brenda-text {
+  font-size: 1rem;
+  line-height: 1.5;
+}
+
+
+.brenda-card h2 {
+  font-size: 1rem;
+  margin-bottom: 10px;
+  margin-left: 0; /* Ensure there’s no left margin */
+  text-align: left; 
+  color: #4ECDC4;
+}
+
+/* Angellah Card */
+.card-section {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #f9f9f9;
+  padding: 20px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  margin: 20px 0;
+}
+
+/* Angellah Image */
+.card-section img {
+  
+  width: 200px;
+  height: auto;
+  border-radius: 8px;
+  object-fit: cover;
+}
+
+/* Angellah Text Section */
+.card-text {
+  flex: 1;
+  margin-left: 10px;
+  text-align: justify;
+}
+
+.card-text h2 {
+  font-size: 1rem;
+  margin-bottom: 10px;
+  margin-left: 0; /* Ensure there’s no left margin */
+  text-align: left; 
+ 
+}
+
+.card-text p {
+  font-size: 1rem;
+  line-height: 1.5;
+}

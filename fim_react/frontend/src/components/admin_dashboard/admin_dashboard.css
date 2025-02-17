@@ -1,0 +1,137 @@
+  /* .container {
+    max-width: 1200px;
+    padding: 20px;
+    border: 1px solid #ddd;
+    background-color: #f9f9f9;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
+
+  
+  table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 20px;
+    
+  }
+  
+  th, td {
+    border: 1px solid #ddd;
+    padding: 8px;
+    text-align: left;
+   
+  }
+
+  th{
+    font-weight: bold;
+    font-size: larger;
+    font-size: 20px;
+ 
+  }
+  
+  thead {
+    background-color: #f2f2f2;
+  }
+  
+  td {
+    vertical-align: top;
+  }
+  
+  td a {
+    display: block;
+    margin-bottom: 5px;
+    text-decoration: none;
+    color: #007bff;
+  }
+  
+  td a:hover {
+    text-decoration: underline;
+    
+  }
+   */
+
+   
+   .dashboard-container {
+    display: flex;
+    flex-direction: column;
+    font-family: 'Arial', sans-serif;
+    min-height: 100vh;
+  }
+  
+  .admin-dashboard-header {
+    background-color: #313B72;
+    color: white;
+    padding: 20px;
+    text-align: center;
+  }
+  .admin-dashboard-header h1{
+color:#fff  
+  }
+
+  .dashboard-content {
+    display: flex;
+    flex: 1;
+  }
+  
+  .sidebar {
+    background-color: #f4f4f4;
+    width: 250px;
+    padding: 20px;
+    border-right: 1px solid #ddd;
+  }
+  
+  .sidebar ul {
+    list-style: none;
+    padding: 0;
+  }
+  
+  .sidebar li {
+    cursor: pointer;
+    padding: 10px 0;
+    font-size: 1rem;
+    color: #333;
+    border-bottom: 1px solid #ddd;
+  }
+  
+  .sidebar li:hover {
+    background-color: #ddd;
+  }
+  
+  .sidebar .links {
+    padding-left: 20px;
+  }
+  
+  .sidebar .links a {
+    display: block;
+    margin: 5px 0;
+    text-decoration: none;
+    color: #313B72;
+  }
+  
+  .sidebar .links a:hover {
+    text-decoration: underline;
+  }
+  
+  .logout-button {
+    margin-top: 20px;
+    padding: 10px;
+    background-color: #f44336;
+    color: white;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+  }
+  
+  .logout-button:hover {
+    background-color: #d32f2f;
+  }
+  
+  .main-content {
+    flex: 1;
+    padding: 20px;
+    background-color: #f9f9f9;
+  }
+  
+  .main-content h2 {
+    color: #333;
+  }
+  

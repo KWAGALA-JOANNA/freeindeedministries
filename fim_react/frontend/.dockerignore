@@ -1,0 +1,14 @@
+# Ignore node_modules (they can be installed inside the container)
+node_modules
+
+# Ignore build artifacts (if present)
+build
+
+# Ignore git metadata
+.git
+.gitignore
+
+# Ignore log files
+*.log
+
+# Any other files/folders that are not required for building your image

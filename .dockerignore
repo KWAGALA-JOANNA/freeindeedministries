@@ -1,0 +1,14 @@
+# Ignore Git files
+.git
+.gitignore
+
+# Ignore OS-specific files
+.DS_Store
+
+# Ignore logs and temporary files
+*.log
+tmp/
+
+# Optionally ignore node_modules or build directories if not needed in a root build context
+**/node_modules
+**/build

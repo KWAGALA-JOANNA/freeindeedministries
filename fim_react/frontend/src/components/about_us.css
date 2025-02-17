@@ -1,0 +1,496 @@
+.about-us {
+  font-family: "Poppins", sans-serif;
+  color: #333;
+  padding: 30px;
+  line-height: 1.8;
+  background: linear-gradient(135deg, #f9f9f9, #eaeaea);
+}
+
+/* General Titles */
+.title {
+  font-size: 22px;
+  font-weight: 600;
+  text-align: center;
+  color: black;
+  text-transform: uppercase;
+  margin-bottom: 20px;
+  position: relative;
+  display: inline-block;
+}
+
+.title::after {
+  content: "";
+  display: block;
+  width: 60px;
+  height: 4px;
+  background: #fc9206;
+  margin: 10px auto 0;
+  border-radius: 4px;
+}
+
+/* Introduction Section */
+.introduction-section {
+  background: white;
+  padding: 30px;
+  border-radius: 15px;
+  margin-bottom: 40px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+  color: #2c3e50;
+  text-align: center;
+}
+
+.introduction-section p {
+  font-size: 1.1rem;
+  margin: 10px 0 0;
+  /* color: #333; */
+  /* color: white; */
+}
+
+/* Vision Section */
+.vision-section {
+  background: #ffffff;
+  border: 2px solid #2F0147;
+  padding: 40px 20px;
+  border-radius: 15px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  margin: 50px auto;
+  max-width: 800px;
+}
+
+.icon-image {
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 4px solid #FFD639;
+  animation: bounce 2s infinite;
+}
+
+@keyframes bounce {
+  0%,
+  100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-10px);
+  }
+}
+
+.vision-text h2 {
+  font-size: 1.8rem;
+  color: #333;
+}
+
+.vision-text p {
+  font-size: 1.1rem;
+  color: #555;
+}
+
+/* Goals Section */
+.goals-section {
+  background: linear-gradient(135deg, #2F0147, #3BA8B6);
+  color: #ffffff;
+  padding: 40px 20px;
+  border-radius: 20px;
+  margin: 20px auto;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
+  max-width: 1200px;
+}
+
+.goals-wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 20px;
+}
+
+.image-container {
+  flex: 1;
+  max-width: 400px;
+  margin: 0 auto;
+}
+
+.goals-image {
+  width: 100%;
+  border-radius: 15px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+}
+
+.goals-content {
+  flex: 2;
+}
+
+.goals-content.title {
+  font-size: 2rem;
+  font-weight: 700;
+  margin-bottom: 20px;
+  color: #FFD639;
+  text-shadow: 1px 1px 5px rgba(1, 1, 0, 0.5);
+}
+
+.objectives-list {
+  list-style: none;
+  padding: 0;
+  line-height: 1.6;
+}
+
+.objectives-list li {
+  margin-bottom: 15px;
+  font-size: 1.2rem;
+  padding-left: 30px;
+  position: relative;
+}
+
+.objectives-list li::before {
+  content: "✔";
+  position: absolute;
+  left: 0;
+  top: 0;
+  font-size: 1.3rem;
+  color: #ffffff;
+}
+
+@media (max-width: 768px) {
+  .goals-wrapper {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .goals-content {
+    text-align: left;
+  }
+
+  .image-container {
+    max-width: 100%;
+  }
+}
+
+/* Core Values Section */
+.core-values-section {
+  background: linear-gradient(135deg, #f7f9fa, #ffffff);
+  padding: 40px 20px;
+  border-radius: 15px;
+}
+
+.values-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(250px, 1fr));
+  gap: 20px;
+}
+
+.value-card {
+  background: #ffffff;
+  padding: 20px;
+  border-radius: 15px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  text-align: left;
+}
+
+.value-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 16px 40px rgba(255, 165, 0, 0.4);
+}
+
+.value-card h3 {
+  font-size: 14px;
+  color: #4ECDC4;
+  font-weight: 500px;
+  margin-bottom: 10px;
+}
+
+.value-card p {
+  font-size: 14px;
+  color: rgb(41, 37, 37);
+  line-height: 2;
+}
+
+/* Call to Action Section */
+.cta-section {
+  background: linear-gradient(135deg, #ff7043, #ff8a65);
+  padding: 30px;
+  border-radius: 15px;
+  text-align: center;
+  color: white;
+  margin-bottom: 40px;
+}
+
+.cta-section p {
+  font-size: 1.2rem;
+  margin-top: 10px;
+}
+
+.cta-section .title {
+  color: white;
+}
+
+/* Team Section */
+.team-section {
+  position: relative;
+  height: 400px;
+  background: url("../assets/leaders.jpg");         
+  background-repeat:no-repeat center center/cover;
+  border-radius: 15px;
+  margin-bottom: 40px;
+  overflow: hidden;
+}
+
+.team-overlay {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  background: rgba(0, 0, 0, 0.6);
+  color: white;
+  text-align: center;
+  padding: 40px 20px;
+}
+
+.team-title {
+  font-size: 2rem;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.team-description {
+  font-size: 1.1rem;
+  line-height: 1.5;
+}
+/* General Section Styling */
+.goals-section {
+  /* background: #ff5722;  */
+  color: white;
+  padding: 30px;
+  border-radius: 15px;
+  display: flex;
+  justify-content: center;
+}
+
+.goals-wrapper {
+  display: flex;
+  align-items: flex-start;
+  max-width: 1200px;
+  gap: 30px; /* Space between image and content */
+  width: 100%;
+}
+
+/* Image Styling */
+.image-container {
+  flex-shrink: 0;
+}
+
+.goals-image {
+  margin-top: 80px;
+  width: 405px; /* Adjust width as necessary */
+  height: 362;
+  border-radius: 10px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+}
+
+/* Content Styling */
+.goals-content {
+  flex-grow: 1; /* Make the text container flexible */
+}
+
+.goals-content ul {
+  list-style: none;
+  padding: 0;
+}
+
+.goals-content li {
+  margin: 15px 0;
+  font-size: 1.1rem;
+  position: relative;
+  padding-left: 25px;
+}
+
+.goals-content li::before {
+  content: "✔";
+  position: absolute;
+  left: 0;
+  top: 0;
+  color: white;
+  font-size: 1.2rem;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .goals-wrapper {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .goals-image {
+    margin-bottom: 20px;
+  }
+}
+/* Global Styles */
+body {
+  font-family: "Arial", sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Programs Section */
+.programs-section {
+  background: linear-gradient(120deg, #f6f8fa, #e9eff3);
+  padding: 3rem 1rem;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 1rem;
+}
+
+.programs-title {
+  text-align: center;
+  font-size: 22px;
+  font-weight: bold;
+  color: black;
+  margin-bottom: 2rem;
+}
+
+.programs-list {
+  list-style: none;
+  padding: 0;
+  margin: 0 auto;
+  max-width: 800px;
+}
+
+.programs-item {
+  font-size: 14px;
+  line-height: 1.8;
+  color: #333;
+  margin-bottom: 1.5rem;
+  padding: 0.5rem;
+  background: #fff;
+  border-left: 5px solid #4ECDC4;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+}
+
+.highlight {
+  color: #4ECDC4;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .programs-title {
+    font-size: 1.8rem;
+  }
+
+  .programs-item {
+    font-size: 1rem;
+  }
+
+  .content-container {
+    flex-direction: column; /* Stack items vertically */
+    align-items: flex-start; /* Align items to the start */
+  }
+
+  .intro-image {
+    margin-bottom: 1rem; /* Add spacing below the image */
+  }
+  
+
+
+
+}
+
+/* hey */
+.empowering-message {
+  font-family: "Roboto", sans-serif; /* Modern, clean font */
+  line-height: 1.8;
+  flex-direction: right; /* Improves readability */
+  color: #333333; /* Dark gray text for readability */
+  /* background: linear-gradient(
+    to right,
+    #ecb163,
+    #7ba767
+  );  */
+  display: flex;
+  padding: 30px; /* Spacious padding around the text */
+  border-radius: 10px; /* Rounded corners for a smooth look */
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+  max-width: 500px; /* Limit the width of the paragraph */
+  margin: 0 auto; /* Center the content */
+  text-align: justify; /* Justified text for a professional look */
+  font-size: 18px; /* Slightly larger font size for better readability */
+  transition: transform 0.3s ease-in-out; /* Smooth hover effect */
+}
+
+.empowering-message:hover {
+  transform: translateY(-5px); /* Slight lift on hover */
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.15); /* Enhance shadow on hover */
+}
+
+.empowering-message a {
+  color: #ff5a5f; /* Soft red color for links */
+  text-decoration: none; /* Remove underline from links */
+  font-weight: bold;
+}
+
+.empowering-message a:hover {
+  text-decoration: underline; /* Underline links on hover */
+}
+
+/* n */
+/* Styling the content container for flexbox layout */
+.content-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 30px; /* Space between the image and text */
+  flex-wrap: wrap; /* Allow content to stack on smaller screens */
+}
+
+/* Styling the image */
+.intro-image {
+  width: 300px;
+  height: 350px;
+  object-fit: cover;
+  border-radius: 8px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Vision Section Styling */
+.vision-section {
+  padding: 2rem;
+  background-color: #f9f9f9;
+}
+
+.vision-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 2rem; /* Adds space between the image and text */
+}
+
+.icon-image {
+  width: 150px; /* Adjust size as needed */
+  height: auto;
+  border-radius: 8px; /* Optional: rounded corners */
+}
+
+.vision-text {
+  max-width: 600px; /* Ensures text doesn't stretch too wide */
+}
+
+.title {
+  font-size: 1.8rem;
+  margin-bottom: 1rem;
+  color: #333;
+}
+
+.vision-text p {
+  font-size: 1.2rem;
+  color: #555;
+  line-height: 1.6;
+}

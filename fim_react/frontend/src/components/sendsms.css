@@ -1,0 +1,102 @@
+/* General container styling */
+.container {
+    max-width: 600px;
+    margin: 50px auto;
+    padding: 20px;
+    background-color: #f9f9f9;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    font-family: Arial, sans-serif;
+  }
+  
+  /* Title styling */
+  .title {
+    text-align: center;
+    font-size: 24px;
+    font-weight: bold;
+    color: #333;
+    margin-bottom: 20px;
+  }
+  
+  /* Form styling */
+  .form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+  }
+  
+  /* Input fields */
+  .input,
+  .textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+    transition: border-color 0.3s ease;
+  }
+  
+  .input:focus,
+  .textarea:focus {
+    border-color: orange;
+    outline: none;
+    box-shadow: 0 0 5px white;
+  }
+  
+  /* Textarea specific */
+  .textarea {
+    min-height: 100px;
+    resize: vertical;
+  }
+  
+  /* Radio buttons */
+  label {
+    margin-right: 15px;
+    font-size: 16px;
+    color: #555;
+  }
+  
+  input[type="radio"] {
+    margin-right: 5px;
+  }
+  
+  /* Button styling */
+  .click{
+    padding: 12px 20px;
+    font-size: 16px;
+    color: #fff;
+    background-color: orange;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .click:hover {
+    background-color: green;
+  }
+  
+
+  /* Style the radio buttons */
+form div input[type="radio"] {
+    accent-color: green; /* Change the radio button color */
+    margin-right: 5px; /* Add space between the radio button and text */
+  }
+  
+  /* Success and error messages */
+  .success,
+  .error {
+    text-align: center;
+    font-size: 16px;
+    font-weight: bold;
+    margin-top: 15px;
+  }
+  
+  .success {
+    color: #28a745;
+  }
+  
+  .error {
+    color: #dc3545;
+  }
+  

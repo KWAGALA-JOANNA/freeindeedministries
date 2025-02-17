@@ -1,0 +1,16 @@
+# version: '3.8'
+
+services:
+  backend:
+    build: ./New folder
+    ports:
+      - "5000:5000"
+    environment:
+      - FLASK_ENV=production
+    # depends_on:
+    #   -  # (Only if backend needs a database)
+
+  frontend:
+    build: ./fim_react/frontend
+    ports:
+      - "80:80"

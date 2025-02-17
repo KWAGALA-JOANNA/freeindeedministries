@@ -1,0 +1,96 @@
+
+/* Header Styles */
+.header {
+    display: flex;
+    justify-content: center; /* Center everything horizontally */
+    align-items: center; /* Center everything vertically */
+    padding: 0rem 2rem;
+    background-color: white;
+    color: black; /* Text color */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    position: sticky; /* Keeps the header visible when scrolling */
+    top: 0;
+    z-index: 1000;
+    gap: 1rem; /* Controls spacing between logo-section, separator, and nav */
+}
+
+.logo-section {
+    display: flex;
+    align-items: center; /* Align logo and text horizontally */
+    gap: 1rem; /* Space between the logo image and text */
+    margin-left: 50px;
+}
+
+.logo-img {
+    border-radius: 350%; /* Makes the logo round */
+    width: 71px; /* Adjust size as needed */
+    height: 76px; /* Maintain square aspect ratio for a perfect circle */
+    /* margin-left: 60px; */
+}
+
+.logo-text {
+    font-size: 1.2rem; /* Adjust font size for the title */
+    font-weight: bold;
+    color: black;
+    white-space: nowrap; /* Prevent the text from breaking into multiple lines */
+    font-family:  Montserrat, sans-serif;
+}
+
+/* Add the separator (vertical line) */
+.separator {
+    height: 50px; /* Adjust height of the line */
+    width: 1px; /* The thickness of the line */
+    background-color: #000; /* Color of the line */
+    margin-left: 20px;
+}
+
+/* Nav styles */
+.nav ul {
+    display: flex; /* Align links in a horizontal row */
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    gap: 3rem; /* Controls spacing between links */
+}
+
+.nav ul li a {
+    color: black; /* Default color */
+    text-decoration: none;
+    font-size: 1rem;
+    transition: color 0.3s ease;
+    font-family:  'Times New Roman', Times, serif;
+    font-weight: bold;
+    gap: 10px;
+}
+
+.nav ul li a:hover {
+    color: orange; /* Orange text on hover */
+}
+
+.nav ul li .active {
+    /* background-color: orange;  */
+    /* color: white;  */
+    padding: 0.5rem 1rem; 
+    border-radius: 20px; 
+}
+
+
+
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .header {
+        flex-direction: column; /* Stack items vertically on smaller screens */
+        text-align: center;
+        gap: 1rem; /* Adjust spacing for mobile view */
+    }
+
+    .logo-section {
+        margin-bottom: 1rem; /* Add space between logo-section and nav */
+    }
+
+    .nav ul {
+        flex-direction: column; /* Stack links vertically */
+        gap: 1rem; /* Space between nav items */
+    }
+}

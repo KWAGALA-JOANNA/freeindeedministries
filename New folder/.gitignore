@@ -1,0 +1,9 @@
+node_modules
+venv/
+__pycache__/
+FIMAPP/__pycache__/
+FIMAPP/controllers/ministry_post/__pycache__/
+FIMAPP/controllers/prayer_request/__pycache__/
+FIMAPP/controllers/user/__pycache__/
+FIMAPP/models/__pycache__/
+ 
